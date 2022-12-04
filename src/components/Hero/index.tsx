@@ -24,7 +24,7 @@ export const Hero = () => {
 					fontFamily='epilogue, sans-serif'
 					color='white'
 				>
-					Ganhar recompensas nunca foi tão easy
+					Ganhar recompensas nunca foi tão fácil
 				</Text>
 
 				<Flex gap='6' mt='9'>

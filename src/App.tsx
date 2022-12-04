@@ -9,6 +9,7 @@ export function App() {
 			<Header />
 			<Hero />
 			<HowWorksSection />
+			<Testimonials />
 		</>
 	);
 }

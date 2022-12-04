@@ -27,13 +27,13 @@ export const Header = () => {
 			{/* Navbar */}
 			<HStack as='nav' spacing='4'>
 				<Box color='blue.500' fontWeight='bold' fontSize='25'>
-					<Link>Home</Link>
+					<Link href='/'>Home</Link>
 				</Box>
 				<Box color='blue.500' fontWeight='bold' fontSize='25'>
-					<Link>Como funciona</Link>
+					<Link href='#how-works'>Como funciona</Link>
 				</Box>
 				<Box color='blue.500' fontWeight='bold' fontSize='25'>
-					<Link>Testemunhas</Link>
+					<Link href='#testimonials'>Testemunhas</Link>
 				</Box>
 			</HStack>
 
