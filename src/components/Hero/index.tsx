@@ -1,8 +1,7 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 
-import appleImg from '../../assets/apple-logo.svg';
-import googlePlayImg from '../../assets/google-play-logo.svg';
 import heroImg from '../../assets/hero-phones.png';
+import { DownloadApp } from '../DownloadApp';
 
 export const Hero = () => {
 	return (
@@ -28,55 +27,8 @@ export const Hero = () => {
 				</Text>
 
 				<Flex gap='6' mt='9'>
-					<Flex
-						bg='black'
-						w='273px'
-						h='75px'
-						align='center'
-						justify='center'
-						gap='2.5'
-						borderRadius='xl'
-						padding='4'
-						textAlign='center'
-						_hover={{
-							cursor: 'pointer',
-						}}
-					>
-						<Image src={appleImg} w='50px' h='50px' />
-						<Text
-							fontSize='18'
-							fontWeight='medium'
-							fontFamily='Work Sans, sans-serif'
-							color='white'
-						>
-							Baixe na App Store
-						</Text>
-					</Flex>
-
-					<Flex
-						bg='black'
-						w='273px'
-						h='75px'
-						align='center'
-						justify='center'
-						gap='2.5'
-						borderRadius='xl'
-						padding='4'
-						textAlign='center'
-						_hover={{
-							cursor: 'pointer',
-						}}
-					>
-						<Image src={googlePlayImg} w='50px' h='50px' />
-						<Text
-							fontSize='18'
-							fontWeight='medium'
-							fontFamily='Work Sans, sans-serif'
-							color='white'
-						>
-							Baixe na Play Store
-						</Text>
-					</Flex>
+					<DownloadApp store='Apple' />
+					<DownloadApp store='Google' />
 				</Flex>
 			</Box>
 
