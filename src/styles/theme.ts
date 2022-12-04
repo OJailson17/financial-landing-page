@@ -8,4 +8,13 @@ export const theme = extendTheme({
 			600: '#7879F1',
 		},
 	},
+
+	styles: {
+		global: {
+			body: {
+				fontFamily: 'Poppins, sans-serif',
+				lineHeight: 1.2,
+			},
+		},
+	},
 });
