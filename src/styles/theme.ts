@@ -11,6 +11,9 @@ export const theme = extendTheme({
 
 	styles: {
 		global: {
+			html: {
+				scrollBehavior: 'smooth',
+			},
 			body: {
 				fontFamily: 'Poppins, sans-serif',
 				lineHeight: 1.2,

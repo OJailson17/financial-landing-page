@@ -1,14 +1,4 @@
-import {
-	Box,
-	Button,
-	Flex,
-	Link,
-	ListItem,
-	UnorderedList,
-	Text,
-	HStack,
-	Image,
-} from '@chakra-ui/react';
+import { Box, Button, Flex, Link, Text, HStack, Image } from '@chakra-ui/react';
 
 import logoImg from '../../assets/logo.svg';
 
