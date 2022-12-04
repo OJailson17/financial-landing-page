@@ -1,3 +1,11 @@
+import { Header } from './components/Header';
+import { Hero } from './components/Hero';
+import { HowWorksSection } from './components/HowWorks';
+
 export function App() {
-	return <h1>Hello World</h1>;
+	return (
+		<>
+			<Header />
+		</>
+	);
 }
