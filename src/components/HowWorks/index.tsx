@@ -1,22 +1,33 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react';
+import { Box, Flex, Image, Text, useBreakpointValue } from '@chakra-ui/react';
 
 import trackImg from '../../assets/track-saving.png';
 import goalsImg from '../../assets/goals.png';
 import rewardImg from '../../assets/rewards.png';
 
 export const HowWorksSection = () => {
+	const isTablet = useBreakpointValue({
+		base: false,
+		md: true,
+		lg: false,
+	});
+
 	return (
-		<Box id='how-works' as='section' mt='20' paddingInline='16'>
+		<Box
+			id='how-works'
+			as='section'
+			mt='20'
+			paddingInline={['6', '6', '10', '16', '16']}
+		>
 			<Text
 				textAlign='center'
-				fontSize='30'
+				fontSize={['24', '24', '30']}
 				fontFamily='Work Sans, sans-serif'
 				color='blue.600'
 			>
 				Como funciona
 			</Text>
 			<Text
-				fontSize='48'
+				fontSize={['30', '30', '48']}
 				fontWeight='bold'
 				textAlign='center'
 				maxW='523px'
@@ -25,8 +36,15 @@ export const HowWorksSection = () => {
 				Como nosso produto funciona?
 			</Text>
 
-			<Flex mt='6' justify='space-between' align='center' textAlign='center'>
-				<Box maxW='293px'>
+			<Flex
+				mt='6'
+				justify='space-between'
+				align='center'
+				flexWrap='wrap'
+				textAlign='center'
+				flexDirection={['column', 'column', 'row']}
+			>
+				<Box w={['70%', '90%', '50%']} maxW='293px'>
 					<Image src={trackImg} />
 					<Text fontSize='20' fontWeight='bold'>
 						Gerencie suas{' '}
@@ -39,7 +57,7 @@ export const HowWorksSection = () => {
 					</Text>
 				</Box>
 
-				<Box maxW='293px'>
+				<Box w={['70%', '90%', '50%']} maxW='293px'>
 					<Image src={goalsImg} />
 					<Text fontSize='20' fontWeight='bold'>
 						Cumpra suas{' '}
@@ -52,7 +70,11 @@ export const HowWorksSection = () => {
 					</Text>
 				</Box>
 
-				<Box maxW='293px'>
+				<Box
+					w={['70%', '90%', '50%']}
+					maxW='293px'
+					m={isTablet ? '0 auto' : ''}
+				>
 					<Image src={rewardImg} />
 					<Text fontSize='20' fontWeight='bold'>
 						Resgatar{' '}

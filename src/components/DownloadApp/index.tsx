@@ -11,8 +11,8 @@ export const DownloadApp = ({ store }: DownloadAppProps) => {
 	return (
 		<Flex
 			bg='black'
-			w='273px'
-			h='75px'
+			maxW='273px'
+			h={['50px', '75px', '75px']}
 			align='center'
 			justify='center'
 			gap='2.5'
@@ -25,11 +25,10 @@ export const DownloadApp = ({ store }: DownloadAppProps) => {
 		>
 			<Image
 				src={store === 'Google' ? googlePlayImg : appleImg}
-				w='50px'
-				h='50px'
+				w={['20px', '30px', '50px']}
 			/>
 			<Text
-				fontSize='18'
+				fontSize={['14', '16', '18']}
 				fontWeight='medium'
 				fontFamily='Work Sans, sans-serif'
 				color='white'
